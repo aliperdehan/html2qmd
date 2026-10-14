@@ -1,0 +1,28 @@
+---
+title: "Demo"
+format:
+  html:
+    self-contained: true
+    toc: true
+---
+
+## Data
+
+```{r}
+d <- read.csv("demo.csv")
+head(d)
+```
+
+A short sentence with inline math $\bar{x}$ and a display equation:
+
+$$t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}$$
+
+## Test
+
+```{r}
+t.test(d$y, mu = 5)
+```
+
+```{r}
+plot(d$x, d$y)
+```
